@@ -3,6 +3,8 @@ applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
   route: pal-tracker-unexperienced-sacrilege.apps.evans.pal.pivotal.io
+  services:
+  - tracker-database
   env:
     WELCOME_MESSAGE: Hello from Cloud Foundry
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
